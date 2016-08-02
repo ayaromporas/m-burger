@@ -1,0 +1,589 @@
+/* CSS Document */
+
+body {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+
+.wrapper {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+	color: #707070;
+	background: #000;
+	margin: -5px auto -15px auto;
+	padding: 0;
+	border: 0;
+	width: 1140px;  
+/*	width: 85%;  */
+	box-shadow: 0 5px 15px 0px #888888;	
+
+}
+
+/*----------------------------------- login + navigacija ----------------------------------------*/
+
+
+.black_bar_top {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 135px;
+
+}
+
+.top_nav{
+	float: right;
+	margin: 5px 5px 0 0;
+	padding: 0;
+	border: 0;
+	
+}
+
+.top_nav button {
+	border: 1px solid #00cc00;
+	color: #00cc00;
+	background: #000;
+	margin: 5px;
+	padding: 4px;
+
+}
+
+
+
+.logo {
+	float: left;
+	margin: 10px 0 0 20px;
+	border: 0;
+	padding: 0;
+	
+}
+
+.menu {
+	float: right;
+	position: relative;
+	top: 55px;
+	right: 15px;
+
+}
+
+.menulist {
+	margin: 0;
+	text-align: right;
+}
+.menulist li {
+	display: inline;
+	list-style-type: none;
+	vertical-align: middle;
+	padding: 0 14px;
+	font-size: 22px;
+	font-weight: bolder;
+	
+}
+.menu a:link, a:visited {
+	color: #ff3333;
+	font-size: 22px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: bolder;
+	letter-spacing: 2px;
+
+}
+
+
+.menu a:hover, a:active {
+	color: #00cc00;
+	font-size: 22px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+/*PETAR -------------------------------------------------------POP-UP prozor za porudzbinu*/ 
+#productBox{
+	position:fixed;
+	left: 25%;
+	top:50px;  
+	height:450px;
+	width:50%;
+
+}
+
+/*PETAR*/ 
+#productDiv{
+	z-index: 5;
+	width:100%;
+	height:100%;  
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	background-color:#e6ffff;
+	padding:10px;
+	text-align: left;
+}
+
+.x-button{
+	position:relative;
+	float:right;
+/*	top:-10px;
+	left:185px;  */
+}
+
+/*PETAR*/
+.productNaslov{
+	font-weight: bold;
+	text-decoration: underline;
+	font-size:120%;
+	margin-bottom:20px;
+}
+
+/*PETAR*/
+.productImg{
+	position:relative;
+	float:left;
+	height:50%;
+	width:45%;
+}
+
+/*PETAR*/
+.productOpis{
+	position:relative;
+	float:left;  
+	height:50%;
+	width:45%;
+}
+
+#naruci{
+	width:50%;
+	height:88%;
+	float:right;
+}
+
+/*PETAR*/
+.osnovniSastojci{
+	text-align: left;
+	position:relative;
+	float:right;  
+}
+
+/*PETAR*/
+p.productOpisi{
+	font-size: 16px;
+	text-align: left;
+}
+
+/*PETAR*/
+.dodaci{
+	text-align: left;
+	position:relative;
+	width:100px;
+	height:170px;
+}
+
+/*PETAR*/
+.extraDodaci{
+	text-align: left;
+	position:relative;
+	width:200px;
+}
+
+/*PETAR*/
+.dodatakCena {
+	text-align: left;
+	font-size: 90%;  
+	display: inline;
+	color: #f5474e;
+	background: #000;
+	border-radius: 4px;
+	padding: 1px 10px;  
+	margin-left: 10px;
+	float:right;
+}
+
+/*PETAR*/
+.productCena {
+	font-size: 90%;  
+	display: inline;
+	color: #f5474e;
+	background: #000;
+	border-radius: 4px;
+	padding: 3px 10px;  
+	margin-left: 10px;
+
+}
+
+/*PETAR*/
+.p{
+	font-weight: bold;
+	font-size: 90%;  
+	text-decoration: underline;
+	padding:0;
+	margin:0;
+	color:#f5474e;
+}
+
+/*PETAR*/
+#ukupno{
+	color:red;
+	font-weight: bold;
+	font-size:110%;
+	position:relative;
+	bottom:-1.2em;
+/*	left:6em;  */
+	width:9em;
+}
+
+/*PETAR*/
+.submit{
+	font-size:16px;
+	color:#8cff1a;
+	background-color:#505050;
+	position:relative;
+	bottom:0em;
+	left:2em;  
+}
+
+/*PETAR*/
+.dropdown-content {
+	z-index: 3;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px; 
+	text-align: left;
+		
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*END PETAR-----------------------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------- header (logo + slider) -------------------------------------*/
+
+
+.header {
+	
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 350px;
+	border-bottom: 2px dashed #606060;
+}
+
+.slogan {
+
+	width: 500px;
+
+	padding: 40px 0 40px 40px;
+	margin: 0;
+	color: #707070;
+	text-align: justify;
+	float: left;
+	font-weight: 500;
+	font-size: 18px;
+	
+}
+
+.slogan h3 {
+	color: #fad145;
+}
+
+.slider {
+	width: 550px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	float: right;
+	
+
+}
+
+/*-------------------------- sredisnji deo (main + sidebar) -------------------------------------------------*/
+
+
+.central {
+	background: #fff;
+	margin: 0 0 -20px 0;
+	padding: 40px 0 20px 0;
+	overflow: hidden; /* AJA */
+	width: 100%;
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.kat {
+	margin: 0 20px;
+	padding: 10px;
+	width: 280px;
+	text-align: center;
+	box-shadow: 0 5px 15px 0px #888888;	
+}
+
+.kat a:link, a:visited {
+	color: #ff3333;
+	font-size: 26px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: 700;
+	letter-spacing: 1px; /* AJA */
+}
+
+
+.kat a:hover, a:active {
+	color: #00cc00;
+	font-size: 26px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: 700;
+	letter-spacing: 1px; /* AJA */
+
+}
+
+.kat img {
+	margin: 25px 0 0 0;
+
+}
+
+.central table {
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+
+}
+
+.central form {
+	text-align: center;
+	color: #505050;
+
+}
+
+#holder1 {
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.reg_log_top {
+	text-align: center;
+	color: #ff3333;
+}
+
+.reg_log_text {
+	color: #707070;
+	text-align: justify;
+	margin: 0;
+	padding: 10px 40px;
+}
+
+.reg_log_text a:link, a:visited {
+	color: #ff3333;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+}
+
+.reg_log_text a:hover, a:active {
+	color: #00cc00;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+}
+
+.reg_log_text p {
+	margin: 0;
+	padding: 0 40px;
+}
+
+.reg_log_form {
+	color: #505050;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.reg_log_form input {
+	width: 30%;
+	
+}
+
+.dugme {
+	border: 1px solid #00cc00;
+	color: #00cc00;
+	background: #fff;
+	margin: 5px;
+	padding: 4px;
+	width: 100px;
+}
+
+.warning {
+	color: #ff3333;
+	background: #fff;
+	font-weight: 600;
+
+	margin: 0 100px;
+	padding: 4px 80px;
+	border: 1px solid #ff3333;
+	
+}
+
+/* AJA */
+
+.artikli {
+	width: 700px;
+	margin: 0 auto 0 20px;
+	text-align: left;
+	
+}
+
+.artikli table, tr, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.artikli table {
+	margin: 10px auto;
+	width: 600px;
+	text-align: center;
+}
+
+.artikli table img {
+	width: 150px;
+	height: 150px;
+}
+
+.td_img {
+	width: 150px;
+}
+
+.td_naziv {
+	width: 440px;
+}
+
+.artikli button {
+	border: 1px solid #00cc00;
+	color: #00cc00;
+	background: #fff;
+	margin: 5px;
+	padding: 4px;
+
+}
+
+.sidebar_korpa {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	top: 10px;
+	border-left: 2px dashed #606060;
+	text-align: center;
+	float: right;
+}
+
+.sidebar_korpa h3 {
+	color: #00cc00;
+
+
+}
+
+.prikaz_korpe {
+	margin: 0;
+	padding: 20px 40px;
+}
+
+/* END AJA */
+
+/*---------------------------------------- footer -----------------------------------*/
+
+ 
+
+.footer {
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+
+}
+.footer h3 {
+	color: #00cc00;
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+.footer a:link, a:visited {
+	color: #ff3333;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.footer a:hover, a:active {
+	color: #00cc00;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.footer table {
+	width: 1140px;
+	border-collapse: collapse;
+	margin: 0 0 0 35px;
+	padding: 0;
+
+}
+
+.footer tr, .footer td {
+	margin: 0;
+	border-collapse: collapse;
+	padding: 0;
+
+}
+
+.bottom1 td{
+	
+	padding: 0 10px 10px 75px;
+ }
+
+.bottom2 td{
+	letter-spacing: 2px;
+	padding: 0 10px 10px 40px;
+}
+
+
+.copyrights {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #606060;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 12px;
+	background: #fff;
+	padding: 5px;
+	font-weight: 600;
+
+}
+
+.copyrights p {
+	margin: 2px;
+}
