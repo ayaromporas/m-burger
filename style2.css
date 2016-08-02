@@ -1,0 +1,359 @@
+/* CSS Document */
+
+body {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+
+.wrapper {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+	color: #707070;
+	background: #000;
+	margin: -5px auto -15px auto;
+	padding: 0;
+	border: 0;
+/*	width: 1140px;  PETAR */
+	width: 80%;  /*  PETAR  */
+	box-shadow: 0 5px 15px 0px #888888;	
+
+}
+
+/*----------------------------------- login + navigacija ----------------------------------------*/
+
+
+.black_bar_top {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 135px;
+
+}
+
+.top_nav{
+	float: right;
+	margin: 5px 5px 0 0;
+	padding: 0;
+	border: 0;
+	
+}
+
+.top_nav button {
+	border: 1px solid #00cc00;
+	color: #00cc00;
+	background: #000;
+	margin: 5px;
+	padding: 4px;
+
+}
+
+
+
+.logo {
+	float: left;
+	margin: 10px 0 0 20px;
+	border: 0;
+	padding: 0;
+	
+}
+
+.menu {
+	float: right;
+	position: relative;
+	top: 55px;
+	right: 15px;
+
+}
+
+.menulist {
+	margin: 0;
+	text-align: right;
+}
+.menulist li {
+	display: inline;
+	list-style-type: none;
+	vertical-align: middle;
+	padding: 0 14px;
+	font-size: 22px;
+	font-weight: bolder;
+	
+}
+.menu a:link, a:visited {
+	color: #ff3333;
+	font-size: 22px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: bolder;
+	letter-spacing: 2px;
+
+}
+
+
+.menu a:hover, a:active {
+	color: #00cc00;
+	font-size: 22px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+
+
+
+/*------------------------------------- header (logo + slider) -------------------------------------*/
+
+
+.header {
+	
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 350px;
+	border-bottom: 2px dashed #606060;
+}
+
+.slogan {
+
+/*	width: 500px;   PETAR  */
+	width:43%;    /*   PETAR   */
+	padding: 40px 0 40px 40px;
+	margin: 0;
+	color: #707070;
+	text-align: justify;
+	float: left;
+	font-weight: 500;
+	font-size: 18px;
+	
+}
+
+.slogan h3 {
+	color: #fad145;
+}
+
+.slider {	
+/*	width: 550px;   PETAR */
+	width: 47%; /*  PETAR */
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	float: right;
+}
+
+/* PETAR  */
+.slider img{
+	height:100%;
+	width:100%;
+}
+
+/*-------------------------- sredisnji deo (main + sidebar) -------------------------------------------------*/
+
+
+.central {
+	
+	background: #fff;
+	margin: 0;
+	padding: 40px 0 40px 0;
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+}
+
+.kat {
+	
+/*	margin: 0 20px;  PETAR */
+	margin: 0 1.25em;   
+	padding: 10px 1.4em 0 1.4em;  
+/* 	width: 280px;  PETAR */
+	width:15.9em;    /*  PETAR  */
+	text-align: center;
+	box-shadow: 0 5px 15px 0px #888888;	
+}
+
+.kat a:link, a:visited {
+	color: #ff3333;
+/*	font-size: 26px;   PETAR  */
+	font-size: 1.63em;  /*  PETAR  */
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: 700;
+}
+
+
+.kat a:hover, a:active {
+	color: #00cc00;
+/*	font-size: 26px;  PETAR  */
+	font-size: 1.63em; /*  PETAR  */
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	font-weight: 700;
+
+}
+
+.kat img {
+	margin: 25px 0 0 0;
+
+}
+
+.central table {
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+
+}
+
+.central form {
+	text-align: center;
+	color: #505050;
+
+}
+
+#holder1 {
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.reg_log_top {
+	text-align: center;
+	color: #ff3333;
+}
+
+.reg_log_text {
+	color: #707070;
+	text-align: justify;
+	margin: 0;
+	padding: 10px 40px;
+}
+
+.reg_log_text a:link, a:visited {
+	color: #ff3333;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+}
+
+.reg_log_text a:hover, a:active {
+	color: #00cc00;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+}
+
+.reg_log_text p {
+	margin: 0;
+	padding: 0 40px;
+}
+
+.reg_log_form {
+	color: #505050;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.reg_log_form input {
+	width: 30%;
+	
+}
+
+.dugme {
+	border: 1px solid #00cc00;
+	color: #00cc00;
+	background: #fff;
+	margin: 5px;
+	padding: 4px;
+	width: 100px;
+}
+
+/*---------------------------------------- footer -----------------------------------*/
+
+ 
+
+.footer {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+
+}
+.footer h3 {
+	color: #00cc00;
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+.footer a:link, a:visited {
+	color: #ff3333;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.footer a:hover, a:active {
+	color: #00cc00;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	transition: 0.5s color;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.footer table {
+/*	width: 1140px;  PETAR  */
+	width:100%;  /*PETAR*/
+	border-collapse: collapse;
+/*	margin: 0 0 0 35px;   PETAR */
+	padding: 0;
+
+}
+
+.footer tr, .footer td {
+	margin: 0;
+	border-collapse: collapse;
+	padding: 0;
+
+}
+
+.bottom1 td{
+	
+	padding: 0 10px 10px 75px;  
+ }
+
+.bottom2 td{
+	
+	letter-spacing: 2px;
+	padding: 0 10px 10px 40px;   
+}
+
+
+.copyrights {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #606060;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 12px;
+	background: #fff;
+	padding: 5px;
+	font-weight: 600;
+
+}
+
+.copyrights p {
+	margin: 2px;
+}
