@@ -56,7 +56,6 @@ function is_blocked(){
 ?>
 
 <script>
-
 // PETAR (funkcija za ispisivanje POP-UP prozora)--------------------------------------------------------------------------------------------------------------------
 	
 function zum(naziv,image,opis,cena,priloziDodatni,priloziPodrazumevani,priloziExtra,cenaPriloga){
@@ -151,5 +150,4 @@ function zum(naziv,image,opis,cena,priloziDodatni,priloziPodrazumevani,priloziEx
 		$( "#"+id ).html("");
 	}
 // END PETAR-------------------------------------------------------------------------------------------------------------------------	
-
 </script>

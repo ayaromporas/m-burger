@@ -15,11 +15,12 @@ $kats = mysqli_query($conn, "select * from kategorije where kat_id<4");
 while($kat = mysqli_fetch_assoc($kats)){
 	$kat_naziv = $kat['kat_naziv'];
 	$kat_foto = $kat['kat_foto'];
+	$kat_id = $kat['kat_id'];
 
 
 	echo "<td>";
-	echo "<div class='kat'><a href='artikli.php?kat={$kat_naziv}'>" . $kat_naziv . "</a><br>";
-	echo "<a href='artikli.php?kat={$kat_naziv}'><img src=". $kat_foto . "></a></div>";
+	echo "<div class='kat'><a href='artikli.php?kat={$kat_id}'>" . $kat_naziv . "</a><br>";
+	echo "<a href='artikli.php?kat={$kat_id}'><img src=". $kat_foto . "></a></div>";
 	echo "</td>";
 }
 
@@ -32,11 +33,12 @@ $kats = mysqli_query($conn, "select * from kategorije where kat_id>3 && kat_id<7
 while($kat = mysqli_fetch_assoc($kats)){
 	$kat_naziv = $kat['kat_naziv'];
 	$kat_foto = $kat['kat_foto'];
+	$kat_id = $kat['kat_id'];
 	
 
 	echo "<td>";
-	echo "<div class='kat'><a href='artikli.php?kat={$kat_naziv}'>" . $kat_naziv . "</a><br>";
-	echo "<a href='artikli.php?kat={$kat_naziv}'><img src=". $kat_foto . "></a></div>";
+	echo "<div class='kat'><a href='artikli.php?kat={$kat_id}'>" . $kat_naziv . "</a><br>";
+	echo "<a href='artikli.php?kat={$kat_id}'><img src=". $kat_foto . "></a></div>";
 	echo "</td>";
 }
 
@@ -49,11 +51,12 @@ $kats = mysqli_query($conn, "select * from kategorije where kat_id>6");
 while($kat = mysqli_fetch_assoc($kats)){
 	$kat_naziv = $kat['kat_naziv'];
 	$kat_foto = $kat['kat_foto'];
+	$kat_id = $kat['kat_id'];
 
 
 	echo "<td>";
-	echo "<div class='kat'><a href='artikli.php?kat={$kat_naziv}'>" . $kat_naziv . "</a><br>";
-	echo "<a href='artikli.php?kat={$kat_naziv}'><img src=". $kat_foto . "></a></div>";
+	echo "<div class='kat'><a href='artikli.php?kat={$kat_id}'>" . $kat_naziv . "</a><br>";
+	echo "<a href='artikli.php?kat={$kat_id}'><img src=". $kat_foto . "></a></div>";
 	
 	echo "</td>";
 
