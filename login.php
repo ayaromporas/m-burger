@@ -120,7 +120,7 @@ if(isset($_POST['submit'])){
 }
 
 foreach ($errors as $error) {
-    echo "<div class='warning'>". $error . "!</div>";
+    echo "<div>". $error . "!</div>";
     echo "<br>";
 }
 
