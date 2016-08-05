@@ -8,4 +8,10 @@ if(admin_in()) header ('Location: administracija.php'); //na primer :)
 
 include('korpa.inc.php');
 include('footer.inc.php');
+
+
+
+
+
+
 ?>

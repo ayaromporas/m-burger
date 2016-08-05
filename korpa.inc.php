@@ -10,28 +10,8 @@
     <div class="prikaz_korpe">
 
 <?php
-	//  PETAR ---------------------------------------------------------------------------------------------------------
-	if(isset($_POST['korpa'])){
-		echo $_POST['artikal']."<br>";
-	
-		for($i=0;isset($_POST['sastojci'.$i]);$i++){
-			echo $_POST['sastojci'.$i]."<br>";
-		}
-	
-		for($i=0;isset($_POST['dodatni'.$i]);$i++){
-			echo $_POST['dodatni'.$i]."<br>";
-		}
 
-		for($i=0;isset($_POST['extradodaci'.$i]);$i++){
-			echo $_POST['extradodaci'.$i]."<br>";
-		}
-
-		echo $_POST['cena']."<br>";
-	}
-	// END PETAR------------------------------------------------------------------------------------------------------
-
-
-	print_r($_SESSION);
+	//print_r($_SESSION);
 
 	$userId = $_SESSION['user_id'];
     $userName = $_SESSION['username'];
@@ -55,6 +35,7 @@
 	    		$narudzbineArray = explode(",", $korpaNarudzbine);
 	    		//print_r($narudzbineArray);
 
+	    		
 
 	    			// upit za listanje detalja narudzbine u odredjenoj korpi
 	    			foreach ($narudzbineArray as $jednaNarudzbina) {
@@ -88,36 +69,105 @@
 							//$artikalKategorija = $artikal['artikal_kategorija'];
 							$artikalNapomena = $artikal['artikal_napomena'];
 
-							echo "<img src='{$artikalFoto}'><br>";
 
-							echo "Artikal : ".$artikalNaziv."<br>Kolicina : ".$narudzbinaKolicina ."<br>Ukupno : <b>";
+							// upit za listanje priloga detaljno
+							$priloziPodrazumevaniArray = explode(",", $artikalPodrazumevani);
+							$priloziDodatniArray = explode(",", $artikalDodatni);
+							$priloziExtraArray = explode(",", $artikalExtra);
+
+
+							//iscrtavanje tabele
+							echo "<table>";
+
+							echo "<tr><td rowspan='4'><img src='../{$artikalFoto}' height='100'></td>";
+
+							echo "<td colspan='3'><b>".$artikalNaziv . "</b></td></tr>";
+
+							echo "<tr><td colspan='3'>".$artikalOpis . "</td></tr>";
+
+							echo "<tr><td><b>Osnovni prilozi:</b><br>";
+
+
+
+								foreach ($priloziPodrazumevaniArray as $prilogPodrazumevani) {
+								$prilPodr = $prilogPodrazumevani;
+								$prilPodrUpit = mysqli_query($conn, "select * from prilozi where prilog_id like '$prilogPodrazumevani'");
+								//echo $prilogPodrazumevani;
+
+
+								// listanje naziva podrazumevanih priloga
+								while($pP = mysqli_fetch_assoc($prilPodrUpit)){
+									$prilog_naziv = $pP['prilog_naziv'];
+									echo $prilog_naziv . "<br>";
+									}
+								}
+
+								echo "</td><td><b>Dodatni prilozi: </b><br>";
+
+								foreach ($priloziDodatniArray as $prilogDodatni) {
+								$prilDod = $prilogDodatni;
+								$prilDodUpit = mysqli_query($conn, "select * from prilozi where prilog_id like '$prilogDodatni'");
+								//echo $prilogPodrazumevani;
+
+
+								// listanje naziva dodatnih priloga
+								while($pD = mysqli_fetch_assoc($prilDodUpit)){
+									$prilog_naziv = $pD['prilog_naziv'];
+									echo $prilog_naziv . "<br>";
+									}
+								}
+
+								echo "</td><td><b>Extra prilozi: </b><br>";
+
+								foreach ($priloziExtraArray as $prilogExtra) {
+								$prilExtra = $prilogExtra;
+								$prilExtUpit = mysqli_query($conn, "select * from prilozi where prilog_id like '$prilogExtra'");
+								//echo $prilogPodrazumevani;
+
+
+								// listanje naziva extra priloga
+								while($pE = mysqli_fetch_assoc($prilExtUpit)){
+									$prilog_naziv = $pE['prilog_naziv'];
+									echo $prilog_naziv . "<br>";
+									}
+								}
+
+								echo "</td></tr>";
+
+							echo "<tr><td colspan='2'>Kolicina : ".$narudzbinaKolicina ."</td><td>Ukupno : <b>";
 
 							$artikalCena = $artikalCena * $narudzbinaKolicina;
 
-							echo $artikalCena . "</b><br><br>";
+							echo $artikalCena . "</b></td></tr>";
 
+							echo "</table>";
+
+							echo "<img src='../images/x.png'>";
 	
 	    					}
-
 	    				}
-
-	    			}
+	    			}	
 	    			
 	    		}
+?>
 
-	    		echo "<a href='korpa.php'><button class='dugme'>Posalji porudzbinu</button></a>";
+	<form name='korpa' action='#' method='post'>
+
+		<p>Unesite svoju adresu:</p>
+		<input type='text' name='adresa'><br>
+		<p>Napomena za dostavu:</p>
+		<textarea name='napomena'></textarea><br><br>
+		<button type='submit' name='submit' value='Posalji porudzbinu' class='dugme'>Posalji porudzbinu</button>
+
+	</form>	
+
+<?php
+	    		
+
 	    	}else{
 
-    		echo "Doslo je do greske pri porucivanju! Obratite se tehnickoj podrsci.";
+    		echo "Vasa korpa je prazna.";
     	}
-
-
-
-    	
-
-
-
-
 
 
 
